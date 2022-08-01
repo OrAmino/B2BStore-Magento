@@ -16,7 +16,8 @@ This project is a dockerized Magento 2.4.4 instance to use with B2B-Store.
    chown -R :www-data .
    chmod u+x bin/magento
    ```
-7. Start the installation (modify the values if needed)
+7. Run `composer install` to download dependencies.
+8. Start the installation (modify the values if needed)
    ```
    bin/magento setup:install \
    --base-url=https://local.magento.com \
@@ -40,7 +41,7 @@ This project is a dockerized Magento 2.4.4 instance to use with B2B-Store.
    --elasticsearch-password=admin \
    --disable-modules='Orienteed_CustomerAgent'
    ```
-8. 2FA for admin access can be disabled with:
+9. 2FA for admin access can be disabled with:
    ```
    bin/magento module:disable Magento_TwoFactorAuth  
    bin/magento cache:flush
