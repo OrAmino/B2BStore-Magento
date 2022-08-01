@@ -1,0 +1,27 @@
+<!-- preview.html -->
+<div
+    attr="data.main.attributes"
+    ko-style="data.main.style"
+    class="pagebuilder-content-type"
+    css="data.main.css"
+    event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false"
+>
+    <render args="getOptions().template"></render>
+    <div class="lms-option">
+        Customize widget options in its settings
+        <div
+            class="lms-option-data"
+            attr="data.option.attributes"
+            ko-style="data.option.style"
+            css="data.option.css"
+            data-bind="liveEdit: { field: 'option', placeholder: $t('randomly/latest/category') }"
+        ></div>
+        <div
+            class="lms-option-data"
+            attr="data.category_ids.attributes"
+            ko-style="data.category_ids.style"
+            css="data.category_ids.css"
+            data-bind="liveEdit: { field: 'category_ids', placeholder: $t('randomly/latest/category') }"
+        ></div>
+    </div>
+</div>

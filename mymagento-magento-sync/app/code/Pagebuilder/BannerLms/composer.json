@@ -1,0 +1,24 @@
+{
+    "name": "custom/module-page-builder-lms",
+    "description": "Page Builder Lms module for Moodle integration",
+    "require": {
+        "magento/framework": "*",
+        "magento/module-page-builder": "*",
+        "php": "~7.1.3||~7.2.0"
+    },
+    "type": "magento2-module",
+    "license": [
+        "proprietary"
+    ],
+    "authors": [
+        {
+            "name": "Javier Álvarez",
+            "email": "jalvarez@orienteed.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    }
+}
